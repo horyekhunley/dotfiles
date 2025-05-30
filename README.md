@@ -33,7 +33,7 @@ My personal dotfiles configuration for a productive development environment.
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/dotfiles.git ~/.dotfiles
+   git clone https://github.com/horyekhunley/dotfiles.git ~/.dotfiles
    cd ~/.dotfiles
    ```
 
