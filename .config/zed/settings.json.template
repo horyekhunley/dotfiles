@@ -1,0 +1,219 @@
+{
+  "context_servers": {
+    "mcp-server-firecrawl": {
+      "settings": {
+        "firecrawl_api_key": "${FIRECRAWL_API_KEY}"
+      }
+    },
+    "mcp-server-brave-search": {
+      "settings": {
+        "brave_api_key": "${BRAVE_API_KEY}"
+      }
+    },
+    "mcp-server-context7": {
+      "settings": {
+        "default_minimum_tokens": "10000"
+      }
+    },
+    "mcp-server-github": {
+      "settings": {
+        "github_personal_access_token": "${GITHUB_PERSONAL_ACCESS_TOKEN}"
+      }
+    },
+    "postgres-context-server": {
+      "settings": {
+        "database_url": "${DATABASE_URL}"
+      }
+    }
+  },
+  "icon_theme": "Zed (Default)",
+  "theme": "Catppuccin Mocha",
+  "base_keymap": "VSCode",
+  "features": {
+    "edit_prediction_provider": "copilot"
+  },
+  "buffer_font_family": "Hack Nerd Font Mono",
+  "buffer_font_features": {
+    "calt": false
+  },
+  "buffer_font_size": 16,
+  "buffer_font_weight": 500,
+  "ui_font_family": "Zed Plex Sans",
+  "ui_font_features": {
+    "calt": false
+  },
+  "ui_font_weight": 400,
+  "ui_font_size": 16,
+  "relative_line_numbers": false,
+  "cursor_blink": false,
+  "hover_popover_enabled": true,
+  "confirm_quit": false,
+  "restore_on_startup": "last_workspace",
+  "when_closing_with_no_tabs": "platform_default",
+  "show_completions_on_input": true,
+  "use_on_type_format": true,
+  "use_autoclose": true,
+  "use_auto_surround": true,
+  "always_treat_brackets_as_autoclosed": false,
+  "show_edit_predictions": true,
+  "show_whitespaces": "selection",
+  "calls": {
+    "mute_on_join": false,
+    "share_on_join": false
+  },
+  "notification_panel": {
+    "button": true,
+    "dock": "left"
+  },
+  "chat_panel": {
+    "button": true,
+    "dock": "right"
+  },
+  "collaboration_panel": {
+    "button": true,
+    "dock": "left"
+  },
+  "outline_panel": {
+    "button": true,
+    "dock": "right"
+  },
+  "project_panel": {
+    "button": true,
+    "dock": "left",
+    "git_status": true
+  },
+  "scrollbar": {
+    "show": "auto",
+    "cursors": false,
+    "git_diff": true,
+    "search_results": true,
+    "selected_symbol": true,
+    "diagnostics": "all"
+  },
+  "double_click_in_multibuffer": "select",
+  "gutter": {
+    "line_numbers": true,
+    "code_actions": true,
+    "runnables": true,
+    "folds": true
+  },
+  "vertical_scroll_margin": 3,
+  "scroll_beyond_last_line": "one_page",
+  "auto_update": true,
+  "auto_install_extensions": {
+    "astro": true,
+    "dockerfile": true,
+    "fish": true,
+    "git-firefly": true,
+    "html": true,
+    "make": true,
+    "nginx": true,
+    "nix": true,
+    "nu": true,
+    "prisma": true,
+    "sql": true,
+    "swift": true,
+    "templ": true,
+    "toml": true,
+    "uiua": true,
+    "vue": true,
+    "zig": true
+  },
+  "file_types": {
+    "Dockerfile": [
+      "Dockerfile",
+      "Dockerfile.*"
+    ],
+    "JSON": [
+      "json",
+      "jsonc",
+      "*.code-snippets"
+    ]
+  },
+  "languages": {
+    "TypeScript": {
+      "inlay_hints": {
+        "enabled": true,
+        "show_parameter_hints": false,
+        "show_other_hints": true,
+        "show_type_hints": false
+      }
+    },
+    "JavaScript": {
+      "inlay_hints": {
+        "enabled": true,
+        "show_parameter_hints": false,
+        "show_other_hints": true,
+        "show_type_hints": false
+      }
+    }
+  },
+  "assistant": {
+    "default_width": 640,
+    "default_height": 320,
+    "provider": {
+      "name": "ollama",
+      "default_model": "deepseek-r1"
+    },
+    "show_call_status_icon": true,
+    "enable_language_server": true,
+    "button": false,
+    "dock": "right",
+    "default_open_ai_model": null
+  },
+  "vim_mode": false,
+  "autosave": "off",
+  "format_on_save": "on",
+  "formatter": "language_server",
+  "remove_trailing_whitespace_on_save": true,
+  "ensure_final_newline_on_save": true,
+  "file_scan_exclusions": [
+    "**/.git",
+    "**/.svn",
+    "**/.hg",
+    "**/CVS",
+    "**/.DS_Store",
+    "**/Thumbs.db",
+    "**/.classpath",
+    "**/.settings",
+    "**/secrets.yml"
+  ],
+  "preview_tabs": {
+    "enabled": true,
+    "enable_preview_from_file_finder": false
+  },
+  "terminal": {
+    "font_family": "Iosevka Nerd Font",
+    "font_size": 15,
+    "line_height": {
+      "custom": 1.7
+    }
+  },
+  "lsp": {
+    "gopls": {
+      "initialization_options": {
+        "gofumpt": true,
+        "usePlaceholders": true,
+        "staticcheck": true,
+        "codelenses": {
+          "gc_details": true,
+          "generate": true,
+          "regenerate_cgo": true,
+          "test": true,
+          "tidy": true,
+          "upgrade_dependency": true,
+          "vendor": true
+        },
+        "analysis": {
+          "completeUnimported": true,
+          "staticcheck": true,
+          "unusedParams": true,
+          "unusedWrite": true
+        },
+        "hoverKind": "FullDocumentation",
+        "linkTarget": "pkg.go.dev",
+        "vulncheck": "Imports"
+      }
+    }
+  }
+}

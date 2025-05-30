@@ -1,0 +1,75 @@
+# Security: Environment files with secrets
+.env
+.env.*
+!.env.example
+
+# Security: Sensitive configuration files
+**/secrets.yml
+**/secrets.yaml
+**/*secret*
+**/*password*
+**/*key*.pem
+**/*key*.key
+**/*.p12
+**/*.pfx
+
+# Zed editor settings (may contain sensitive data)
+.config/zed/settings.json
+.config/zed/settings_backup.json
+/zed/settings.json
+/zed/settings_backup.json
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage
+*.lcov
+
+# node_modules/
+node_modules/
+jspm_packages/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# dotenv environment variable files
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+
+# Cache directories
+.cache
+.parcel-cache
+.next
+.nuxt
+dist
+
+# Temporary files
+.temp
+*.tmp
+*.swp
+*.swo
+*~
